@@ -1,18 +1,18 @@
 //to show something on the caculator screen
 function addToDisplay(value) {
-  const display = document.querySelector('.display');
+  const display = document.querySelector('.equation');
   display.value += value;
 }
 
 //to clear the display
 function clearDisplay() {
-  const display = document.querySelector('.display');
+  const display = document.querySelector(".equation");
   display.value = '';
 }
 
 //calculate
 function calculate() {
-  const display = document.querySelector('.display');
+  const display = document.querySelector('.solution');
   try {
     display.value = eval(display.value);
   } catch (error) {
@@ -20,11 +20,11 @@ function calculate() {
   }
 }
 
+
 function percentage() {
-  const display = document.querySelector('.display');
+  const display = document.querySelector('.solution');
   display.value = display.value / 100;
 }
-
 
 const buttons = document.querySelectorAll('button');
 
@@ -43,5 +43,10 @@ buttons.forEach((button) => {
   });
 });
 
+// function displayResult() {
+//   const result = document.querySelector('.solution')
+//   display.value
+// }
+ //write a funtion that displays the result
 
 

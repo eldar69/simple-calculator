@@ -23,7 +23,7 @@ body {
     background-color: #8A4A4A;
     
     }
-.display {
+.screen {
     border: 1px solid black;
     height: 145px;
     width: 330px;
@@ -59,4 +59,10 @@ input {
     border: none;
     outline: none;
     border-radius: 7px;
+}
+.equation {
+    text-align: left;
+}
+.solution {
+    text-align: right;
 }
